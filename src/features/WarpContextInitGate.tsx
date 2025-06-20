@@ -20,7 +20,7 @@ export function WarpContextInitGate({ children }: PropsWithChildren<unknown>) {
     } else {
       return (
         <div className="flex h-screen items-center justify-center bg-white">
-          <SpinnerIcon width={80} height={80} className="opacity-50 text-primary-500" />
+          <SpinnerIcon width={80} height={80} className="text-primary-500 opacity-50" />
         </div>
       );
     }
