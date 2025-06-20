@@ -1,6 +1,5 @@
 import { SpinnerIcon, useTimeout } from '@hyperlane-xyz/widgets';
 import { PropsWithChildren, useState } from 'react';
-import { Color } from '../styles/Color';
 import { useReadyMultiProvider } from './chains/hooks';
 
 const INIT_TIMEOUT = 10_000; // 10 seconds
@@ -20,8 +19,8 @@ export function WarpContextInitGate({ children }: PropsWithChildren<unknown>) {
       );
     } else {
       return (
-        <div className="flex h-screen items-center justify-center bg-primary-500">
-          <SpinnerIcon width={80} height={80} color={Color.white} className="opacity-50" />
+        <div className="flex h-screen items-center justify-center bg-white">
+          <SpinnerIcon width={80} height={80} className="opacity-50 text-primary-500" />
         </div>
       );
     }
