@@ -57,7 +57,7 @@ export function LayoutBackground() {
     <div>
       <div
         className={cn(
-          'fixed right-0 top-0 z-10 aspect-[582/1010] bg-[url("/backgrounds/background-lines.svg")] bg-contain bg-no-repeat',
+          'fixed right-0 top-0 aspect-[582/1010] bg-[url("/backgrounds/background-lines.svg")] bg-contain bg-no-repeat',
           'isolate z-[-1000] w-[200vw] max-w-[1010px] sm:w-[150vw] md:w-[125vw] lg:w-full',
         )}
       >
@@ -75,7 +75,7 @@ export function LayoutBackground() {
           }
         />
       </div>
-      <div className="bg-secondary fixed inset-0 z-0 h-full w-full" />
+      <div className="bg-secondary fixed inset-0 z-[-1000] h-full w-full" />
     </div>
   );
 }
